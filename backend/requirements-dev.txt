@@ -1,0 +1,38 @@
+# Development dependencies
+# This file can be used with both pip and uv
+# For uv: uv pip install -r requirements-dev.txt
+# For pip: pip install -r requirements-dev.txt
+
+-r requirements.txt
+
+# Testing
+pytest==8.3.3
+pytest-asyncio==0.24.0
+pytest-cov==5.0.0
+pytest-mock==3.14.0
+pytest-xdist==3.6.1
+httpx-mock==0.17.0
+faker==30.3.0
+factory-boy==3.3.1
+
+# Code Quality
+black==24.10.0
+ruff==0.6.9
+mypy==1.11.2
+isort==5.13.2
+pre-commit==4.0.1
+
+# Type Stubs
+types-redis==4.6.0.20241004
+types-python-dateutil==2.9.0.20241003
+
+# Documentation
+mkdocs==1.6.1
+mkdocs-material==9.5.39
+
+# Debugging
+ipython==8.28.0
+ipdb==0.13.13
+
+# Load Testing
+locust==2.32.2
