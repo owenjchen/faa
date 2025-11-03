@@ -4,9 +4,9 @@
   "private": true,
   "description": "Fidelity Agent Assistant - Frontend Application",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node ./node_modules/next/dist/bin/next dev",
+    "build": "node ./node_modules/next/dist/bin/next build",
+    "start": "node ./node_modules/next/dist/bin/next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
@@ -15,7 +15,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "prepare": "cd .. && husky install frontend/.husky"
+    "prepare": "node ./node_modules/husky/bin.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

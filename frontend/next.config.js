@@ -24,10 +24,6 @@ const nextConfig = {
     domains: ['localhost'],
   },
 
-  // Experimental features
-  experimental: {
-    serverActions: true,
-  },
 };
 
 module.exports = nextConfig;
